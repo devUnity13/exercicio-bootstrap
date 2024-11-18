@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 90px;
+}
+
+
+.navbar-nav .nav-link.active {
+    background-color: white;
+    color: rgb(130, 10, 209);
+    border-radius: 4px;
+}
+
+
+header {
+    background-color: rgb(130, 10, 209);
+    border-bottom: 1px solid rgb(91, 8, 146);
+    padding: 8px;
+}
+
+header .navbar-brand, header .nav-link {
+    color: white;
+}
+
+header .nav-link:hover {
+    color: #f8f9fa;
+}
+
+header .navbar-brand{
+    font-size: 2em;
+}
+
+#home{
+    background-color: rgb(130, 10, 209);
+    color: #fff;
+}
+
+#carouselBanner img {
+    object-fit: cover;
+    height: 500px;
+}
+
+#produtos img{
+    height: 230px;
+}
+
+footer {
+    background-color: rgb(130, 10, 209);
+    color: white;
+}
+
+footer p {
+    margin-bottom: 0;
+}

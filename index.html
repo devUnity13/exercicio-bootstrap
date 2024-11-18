@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Nubank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70">
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Nubank</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="link-home" href="#carousel">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="link-cards" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="link-sobre" href="#sobre">Sobre Nós</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="carousel">
+        <div id="carouselBanner" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imgs/banner01.jpg" class="d-block w-100" alt="Celular e conta bancária">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/banner02.jpg" class="d-block w-100" alt="Faixada da empresa Nubank">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/banner03.jpg" class="d-block w-100" alt="Comprando com cartão Nubank">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="produtos" class="pt-5 pb-5">
+        <div class="container">
+            <h3 class="h3 pt-5 mt-5 mb-5 text-center">Nossos Produtos</h3>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="./imgs/assistente_de_pagamento.jpg" class="card-img-top" alt="Mulher com celular">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet
+                                euismod nisi. Etiam ut justo a velit hendrerit facilisis non id augue.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./imgs/envie_receba_pagamentos.jpg" class="card-img-top" alt="Homem com celular">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet
+                                euismod nisi. Etiam ut justo a velit hendrerit facilisis non id augue.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="./imgs/caixinha.jpg" class="card-img-top" alt="Celular com conta nubank">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet
+                                euismod nisi. Etiam ut justo a velit hendrerit facilisis non id augue.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-6 text-center mb-4 mb-md-0">
+                    <img src="./imgs/sobre.jpg" class="img-fluid" alt="Sobre Nós">
+                </div>
+                <div class="col-lg-8 col-md-6 text-center text-md-start">
+                    <h2>Sobre Nós</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis velit ut nulla efficitur,
+                        nec euismod justo venenatis. Curabitur ac massa ac libero euismod hendrerit non sit amet magna.
+                        Vestibulum vitae diam sit amet elit faucibus suscipit. Praesent auctor ut ante sed facilisis.
+                        Curabitur vel ex eu arcu tristique feugiat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="text-white">© 2024 EBAC - Curso Full-Stack Java.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
